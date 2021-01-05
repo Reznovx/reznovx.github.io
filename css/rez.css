@@ -1,0 +1,366 @@
+/*
+ * @author Reza a.k.a Reznov <rezakhareisa@gmail.com>
+ * Web Developer
+ * © 2019 Reza Khareisa Putra
+ */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+::-moz-selection {
+  color: #FFF;
+  background: #60ffe4;
+}
+
+::selection {
+  color: #FFF;
+  background: #60ffe4;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto 50px 200px 400px auto;
+  grid-gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu {
+  background: #344955;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 45px;
+  text-align: center;
+}
+
+.sidebar {
+  background: #DA0463;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column: 1/3;
+  margin: 0px 10px;
+  border-radius: 190px 190px 0 0;
+  -webkit-box-shadow: 0px 7px 40px -6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 7px 40px -6px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+  padding: 30px !important;
+  margin: 0px 20px 10px 0px;
+  text-align: center;
+  cursor: default;
+  background: #eeeeee;
+  grid-column: 3/9;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  background: #344955;
+  grid-column: 1/9;
+  grid-row: 5/5;
+  text-align: center;
+}
+
+.social-media img#first-icon {
+  margin-left: 0px;
+}
+
+.social-media img {
+  color: #FFF;
+  align-content: center;
+  width: 50px;
+  margin-left: 100px;
+  height: 50px;
+}
+
+.social-media a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.menu, .sidebar, .content, .footer {
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.logo {
+  max-width: 80px;
+  max-height: 45px;
+  border-radius: 8px;
+}
+
+.caption {
+  font-weight: 300;
+  font-size: 1.7em;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.caption span {
+  font-weight: bold;
+}
+
+.caption span#header-text {
+  font-weight: normal;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.profile-pic:hover {
+  -webkit-box-shadow: 0px 10px 50px 5px #8d8daa;
+          box-shadow: 0px 10px 50px 5px #8d8daa;
+}
+
+.personal p {
+  display: block;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+}
+
+.personal span {
+  font-weight: bold;
+}
+
+dl {
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight: 300;
+  bottom: 40px;
+  left: 40px;
+}
+
+dl dt {
+  width: 60px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+dl dd {
+  margin-left: 80px;
+  text-align: left;
+}
+dl dd a {
+  transition: none;
+}
+dl dd a:hover {
+  letter-spacing: unset;
+  font-weight: normal;
+}
+
+#hidden {
+  grid-row-start: 3;
+  text-align: center;
+  padding: 10px !important;
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#hidden span {
+  font-weight: bold;
+}
+
+h2#about-me {
+  text-align: left;
+  margin: 20px 0px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+h2#about-me::before {
+  content: ' ';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  z-index: -1;
+  bottom: -25px;
+  background: #DA0463;
+  border-radius: 1em;
+}
+
+section p {
+  color: #000;
+  line-height: 2.2em;
+  text-align: justify;
+  margin: 50px 0px;
+}
+
+h2 {
+  word-spacing: -0.15em;
+  font-family: 'Raleway', Arial, sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.6em !important;
+  color: #272833;
+  margin: 10px;
+}
+
+h2.custom {
+  padding-top: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+h2.custom:hover {
+  letter-spacing: 8px;
+}
+
+h2.custom::-moz-selection {
+  background: #9c27b0;
+}
+
+h2.custom::selection {
+  background: #9c27b0;
+}
+
+h5.bottom {
+  font-weight: 100;
+  color: #272833;
+  margin: 5px;
+  font-size: 18px;
+}
+
+h5.custom::-moz-selection {
+  background: #F50057;
+}
+
+h5.custom::selection {
+  background: #F50057;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+a#rez-logo {
+  line-height: 0px;
+}
+
+a.font {
+  color: #4A6572;
+  font-size: 19px !important;
+}
+
+a:hover {
+  letter-spacing: 8px;
+  font-weight: 700;
+}
+
+/* Mobile Viewport */
+@media (max-width: 1024px) {
+  .container {
+    -ms-grid-rows: auto 100px 150px 150px auto;
+        grid-template-rows: auto 100px 150px 150px auto;
+  }
+  .logo {
+    padding: 20px 10px;
+  }
+  dl dt {
+    float: left;
+  }
+  dl dd {
+    margin-left: 80px;
+    text-align: left;
+  }
+  h2.custom {
+    padding-top: 20px;
+  }
+  .caption {
+    padding: 0 25px;
+  }
+  .caption span#header-text {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .profile-pic {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .sidebar {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-radius: 5px;
+  }
+  .content#hidden {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .content {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 20px !important;
+    margin: 0 10px;
+  }
+  h2#about-me {
+    margin: 0px 0px 25px;
+  }
+  h2#about-me::before {
+    width: 40px;
+    margin: 0px -1px 10px;
+  }
+  section p {
+    font-size: 14px;
+    margin: 0px 0px 10px;
+    line-height: 2em;
+  }
+  .sidebar, .content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+  .footer {
+    grid-row: auto;
+  }
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+  }
+}
+/* guthub.com/reznovx */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Rez - Web Developer 2019">
+	<meta name="theme-color" content="#DA0463">
+		<title>Reznov WebDev 2019</title>
+	<link rel="shortcut icon" href="assets/favicon.jpg">
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="css/rez.css">
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<a href="#" id="rez-logo"><img class="logo" src="assets/logo.png" alt="rezLogo"></a>
+			<div class="caption">
+				<span>REZ</span>NOV  <span id="header-text">Personal Information</span>
+			</div>
+		</div>
+		<div class="sidebar">
+			<img class="profile-pic" src="assets/rez.jpg" alt="rezPic's Here">
+			<dl>
+				<dt>Phone</dt>
+				<dd><a href="https://wa.me/6285899142902?text=Mantul!" target="_blank">+62 858 9914 2902</a></dd>
+				<dt>Email</dt>
+				<dd><a href="mailto:rezakhareisa@gmail.com">rezakhareisa@gmail.com</a></dd>
+				<dt>Age</dt>
+				<dd>19 years old</dd>
+			</dl>
+		</div>
+		<div class="content" id="hidden">
+			<h2 class="custom"><span>reza</span> khareisa putra</h2>
+			<h5 class="bottom custom">Web Developer</h5>
+		</div>
+		
+		<div class="content">
+			<h2 id="about-me">About Me</h2>
+			<section>
+				<p>My name is Reza Khareisa Putra. You can call me Rez or Reznov. Since I was a kid, I used to play a computer nearly everyday. 
+					I'm passionate in IT including Programming, Web Development, and Graphic Design. I live in Bogor. 
+					My hobby is read articles, watch some news about tech, play with new tech, playing computer, and many more. 
+					I graduated from Vocational High School in 2018. Now, I work at a little start-up company for just two years 
+					until 2020 then I need to get to the college. My current job position is Web Content Management. And that's it.
+					Thank you!
+				</p>
+			</section>
+		</div>
+		
+		<div class="footer">
+			<p><a href="404.html">Find me on</a></p>
+			<div class="social-media">
+				<a href="https://facebook.com/rezadeodexdotid" target="_blank"><img src="assets/facebook.svg" alt="Facebook's icon" id="first-icon"/></a>
+				<a href="https://twitter.com/rezakhareisa_" target="_blank"><img src="assets/twitter.svg" alt="Twitter's icon"/></a>
+				<a href="https://github.com/reznovx" target="_blank"><img src="assets/github.svg" alt="GitHub's icon"/></a>
+				<a href="https://instagram.com/rezakhareisa_" target="_blank"><img src="assets/instagram.svg" alt="Instagram's icon"/></a>
+			</div>
+		</div>
+	</div>
+	<canvas class="background"></canvas>
+	<script src="js/particles.min.js"></script>
+	<script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                color: '#DA0463',
+                maxParticles: '130',
+				connectParticles: 'true',
+				responsive: [
+					{
+						breakpoint: 768,
+						options: {
+							maxParticles: 65
+						}
+					}
+				]
+            });
+        };
+    </script>
+</body>
+</html>

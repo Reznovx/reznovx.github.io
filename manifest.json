@@ -1,0 +1,22 @@
+{
+  "name": "Rez Web",
+  "short_name": "Rez",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/rez.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "background_color": "#DA0463",
+  "theme_color": "#344955"
+}
